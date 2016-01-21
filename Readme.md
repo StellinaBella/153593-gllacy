@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Galina Chebotareva](https://htmlacademy.ru/profile/id153593).
-* Наставник: `Евгений Старшинов`.
+* Наставник: [Евгений Старшинов](https://htmlacademy.ru/profile/id100874)
 
 ---
 
