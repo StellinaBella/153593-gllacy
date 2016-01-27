@@ -2,14 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-     <link rel="stylesheet" href="style.css">
     <title> HTML Academy: Глейси </title>
   </head>
   <body>
     <header class="main-header">
-      <div class="index-logo">
-        <img src="img/index-logo.png" width="100" height="50" alt="GllacyShop">
-      </div>
       <div class="container">
         <nav class="main-navigation">
           <ul>
@@ -25,18 +21,16 @@
           </ul>
         </nav>
       </div>
-        <div class="user-block">
-          <div class="search">
-          <label for="search"> &#128269; </label>
-          <input type="search" name="search">
-          
-          </div>
-          <div class="login">
-            <a href="#"> Вход </a>
-          </div>
-          <div class="cart">
+      <div class="user-block">
+        <div class="search">
+          <input type="search" name="search">    
+        </div>
+        <div class="login">
+          <a href="#"> Вход </a>
+        </div>
+        <div class="cart">
           <a href="#"> Пусто </a>
-          </div>
+        </div>
       </div>
       <div class="info">
       <p>
@@ -46,13 +40,15 @@
       </div>
     </header>
     <main class="container">
-        <figure class="slider-content">
-          <img src="img/photo-1.jpg" width="100" height="100" alt="Крем-брюле и пломбир">
-          <h1> Крем-брюле и пломбир с малиновым джемом </h1>
-        </figure>
+      <div class="index-logo">
+        <img src="img/index-logo.png" width="100" height="50" alt="GllacyShop">
+      </div>
+      <div class="slider-content">
+        <img src="img/photo-1.jpg" width="100" height="100" alt="Крем-брюле и пломбир">
+        <h1> Крем-брюле и пломбир с малиновым джемом </h1>
         <a class="btn" href="#"> Давайте оба! </a> 
-    </main>
-          <section class="features">
+      </div>
+      <section class="features">
         <div class="features-item">
           <b class="features-name"> Малинка даром! </b>
           <p>
@@ -65,26 +61,46 @@
           <p>
             При покупке 2 кг пломбира, добавим в ваш заказ вкуснейшей шоколадной присыпки 
           </p>
-
           <a class="btn" href="#"> Хочу шоколадки! </a>
         </div>
       </section>
       <section class="catalog">
-        <figure class="catalog-items">
-          <img src="img/photo-2.jpg" width="100" height="100" alt="Апельсиновое">
+        <div class="catalog-items">
+          <figure class="items-image">
+            <img src="http://placehold.it/150x100" alt="Апельсиновое">  
             <figcaption> 310₽/кг </figcaption>
+          </figure>
+        <div class="items-description">
             <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
-          <img src="img/photo-3.jpg" width="100" height="100" alt="Кофейное">
+        </div>
+        </div>
+        <div class="catalog-items">
+          <figure class="items-image">
+            <img src="http://placehold.it/150x100" alt="Кофейное">
             <figcaption> 380₽/кг </figcaption>
+          </figure>
+          <div class="items-description">
             <a href="#"> Сливочно-кофейное с кусочками шоколада </a>
-          <img src="img/photo-4.jpg" width="100" height="100" alt="Клубничное">
+          </div>
+          </div>
+          <div class="catalog-items">
+            <figure class="items-image">
+          <img src="http://placehold.it/150x100" alt="Клубничное">
             <figcaption> 355₽/кг </figcaption>
+            </figure>
+          <div class="items-description">
             <a href="#"> Сливочно-клубничное с присыпкой из белого шоколада </a>
-          <img src="img/photo-5.jpg" width="100" height="100" alt="Крем-брюле">
+          </div>
+          </div>
+          <div class="catalog-items">
+          <figure class="items-image">
+          <img src="http://placehold.it/150x100" alt="Крем-брюле">
             <figcaption> 415₽/кг </figcaption>
+            </figure>
+          <div class="items-description">
             <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
-        </figure>
-        <!--  Как добавить "ХИТ" к изображениям? -->
+          </div>
+          </div>
       </section>
       <div class="index-content">
         <div class="index-content-left">
@@ -119,7 +135,7 @@
       <div class="maps">
         <a href="https://www.google.it/maps/place/Bolshaya+Konyushennaya+ul.,+19,+Sankt-Peterburg,+Russia,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m2!3m1!1s0x4696310fca5ba729:0xea9c53d4493c879f"></a>
       </div>
-      <aside>
+      <div class="contact-info">
         <p>
           Адрес главного офиса и офлайн магазина:<br>
           <strong> ул. Большая Конюшенная 19/8, Санкт-Петербург </strong>
@@ -130,9 +146,10 @@
           (с 10 до 20 ежедневно)
           <input type="submit" name="submit" value="Форма обратной связи">
         </p>
-      </aside>
+      </div>
+      </main>
       <footer>
-        <section class="social-footer">
+        <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#"> Твиттер </a>
           <a class="social-btn social-btn-ins" href="#"> Инстаграм </a>
           <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
@@ -144,8 +161,8 @@
           <a href="#"> Наши документы </a>   
           <a href="#"> Экологические стандарты </a>    
         </section>
-         <section class="footer-copyright">
-          <img src="img/logo-htmlacademy.png">
+        <section class="footer-copyright">
+          <img src="img/logo-htmlacademy.png" alt="">
           <p>
             Сделано в
            <a class="btn" href="https://htmlacademy.ru"> HTML Academy </a>
