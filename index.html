@@ -5,8 +5,8 @@
     <title> HTML Academy: Глейси </title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <header class="container">
+      <div class="main-header">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -23,7 +23,11 @@
       </div>
       <div class="user-block">
         <div class="search">
-          <input type="search" name="search">    
+        <form action="#" method="post">
+         <label>
+          <input type="search" name="search"> 
+         </label>
+        </form>   
         </div>
         <div class="login">
           <a href="#"> Вход </a>
@@ -32,76 +36,75 @@
           <a href="#"> Пусто </a>
         </div>
       </div>
-      <div class="info">
-      <p>
-        С 10 до 20, ежедневно <br>
-        <strong> 8 812 450-25-25 </strong>
-      </p>
-      </div>
-    </header>
-    <main class="container">
+        <div class="info">
+        <p>
+          С 10 до 20, ежедневно <br>
+          <strong> 8 812 450-25-25 </strong>
+        </p>
+        </div>
+      </header>
+    <div class="container">
       <div class="index-logo">
         <img src="img/index-logo.png" width="100" height="50" alt="GllacyShop">
       </div>
-      <div class="slider-content">
-        <img src="img/photo-1.jpg" width="100" height="100" alt="Крем-брюле и пломбир">
+      <div class="index-gllacy-items">
         <h1> Крем-брюле и пломбир с малиновым джемом </h1>
         <a class="btn" href="#"> Давайте оба! </a> 
       </div>
-      <section class="features">
+      <div class="features">
         <div class="features-item">
-          <b class="features-name"> Малинка даром! </b>
+          <h2> Малинка даром! </h2>
           <p>
             При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
           <a class="btn" href="#">Хочу варенье!</a>
         </div>
         <div class="features-item">
-          <b class="features-name"> Шоколадки даром! </b>
+          <h2> Шоколадки даром! </h2>
           <p>
             При покупке 2 кг пломбира, добавим в ваш заказ вкуснейшей шоколадной присыпки 
           </p>
           <a class="btn" href="#"> Хочу шоколадки! </a>
         </div>
-      </section>
-      <section class="catalog">
+      </div>
+      <div class="catalog">
         <div class="catalog-items">
-          <figure class="items-image">
+          <div class="items-image">
             <img src="http://placehold.it/150x100" alt="Апельсиновое">  
-            <figcaption> 310₽/кг </figcaption>
-          </figure>
+            <span> 310₽/кг </span>
+          </div>
         <div class="items-description">
             <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
         </div>
         </div>
         <div class="catalog-items">
-          <figure class="items-image">
+          <div class="items-image">
             <img src="http://placehold.it/150x100" alt="Кофейное">
-            <figcaption> 380₽/кг </figcaption>
-          </figure>
+            <span> 380₽/кг </span>
+          </div>
           <div class="items-description">
             <a href="#"> Сливочно-кофейное с кусочками шоколада </a>
           </div>
           </div>
           <div class="catalog-items">
-            <figure class="items-image">
+            <div class="items-image">
           <img src="http://placehold.it/150x100" alt="Клубничное">
-            <figcaption> 355₽/кг </figcaption>
-            </figure>
+            <span> 355₽/кг </span>
+            </div>
           <div class="items-description">
             <a href="#"> Сливочно-клубничное с присыпкой из белого шоколада </a>
           </div>
           </div>
           <div class="catalog-items">
-          <figure class="items-image">
+          <div class="items-image">
           <img src="http://placehold.it/150x100" alt="Крем-брюле">
-            <figcaption> 415₽/кг </figcaption>
-            </figure>
+            <span> 415₽/кг </span>
+            </div>
           <div class="items-description">
             <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
           </div>
           </div>
-      </section>
+      </div>
       <div class="index-content">
         <div class="index-content-left">
           <p>
@@ -120,17 +123,21 @@
           </p>
         </div>
       </div>
+      <div class="news">
       <div class="blog-news">
         <h3> Новое в нашем блоке </h3>
         <a href="#"> 10 способов сервировки фруктовых щербетов к столу </a>
       </div>
-      <div class="newsletter">
+      </div>
+      <div class="news">
+      <div class="news-letter">
         <p>
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
         </p>
         <input type="text" name="e-mail" id="mail" placeholder="Электронная почта">
         <label for="mail"></label>
         <input type="submit" value="Отправить">
+      </div>
       </div>
       <div class="maps">
         <a href="https://www.google.it/maps/place/Bolshaya+Konyushennaya+ul.,+19,+Sankt-Peterburg,+Russia,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m2!3m1!1s0x4696310fca5ba729:0xea9c53d4493c879f"></a>
@@ -147,28 +154,48 @@
           <input type="submit" name="submit" value="Форма обратной связи">
         </p>
       </div>
-      </main>
-      <footer>
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#"> Твиттер </a>
-          <a class="social-btn social-btn-ins" href="#"> Инстаграм </a>
-          <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
-          <a class="social-btn social-btn-vk" href="#"> Вконтакте </a>
-        </section>
-        <section class="main-footer">
-          <a href="#"> Для поставщиков </a> 
-          <a href="#"> О производстве </a>
-          <a href="#"> Наши документы </a>   
-          <a href="#"> Экологические стандарты </a>    
-        </section>
-        <section class="footer-copyright">
+      </div>
+      <footer class="container">
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a class="social-btn social-btn-tw" href="#"> Твиттер </a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-ins" href="#"> Инстаграм </a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-vk" href="#"> Вконтакте </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer">
+          <ul>
+            <li>
+              <a href="#"> Для поставщиков </a> 
+            </li>
+            <li>
+              <a href="#"> О производстве </a>
+            </li>
+            <li>
+              <a href="#"> Наши документы </a> 
+            </li>
+            <li>  
+              <a href="#"> Экологические стандарты </a>   
+            </li>
+            </ul> 
+        </div>
+        <div class="footer-copyright">
           <img src="img/logo-htmlacademy.png" alt="">
           <p>
             Сделано в
            <a class="btn" href="https://htmlacademy.ru"> HTML Academy </a>
             &copy; 2016
           </p>
-        </section>
+        </div>
       </footer>
   </body>
 </html> 
