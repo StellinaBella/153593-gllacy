@@ -5,6 +5,13 @@ body {
 	font-weight: normal;
 	font-family: 'Roboto', Arial, sans-serif;
 }
+body {
+	min-width: 1200px;
+    min-height: 2416px;
+    margin: 0;
+    padding: 0;
+	background: #849d8f url("img/bg-icecream.svg") no-repeat 50% 50%;
+}
 h1 {
 	font-size: 35px;
 	line-height: 30px;
@@ -18,4 +25,164 @@ h2 {
 	color: #ffffff;
 	font-weight: normal;
 	font-family: 'Roboto', Arial, sans-serif;
+}
+p {
+	word-wrap: break-word;
+}
+ul li {
+	display: inline-block;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.main-header {
+	margin-bottom: 20px;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.main-navigation {
+	float: left;
+	width: 600px;
+	 /* Только для оформления сетки */
+	  min-height: 100px;
+}
+.user-block {
+	float: right;
+	width: 300px;
+	 /* Только для оформления сетки */
+	 min-height: 100px;
+}
+.info {
+	 float: right;
+	 /* Только для оформления сетки */
+	 min-height: 100px;
+}
+.index-logo {
+	float: left;
+    width: 153px;
+    height: 63px;
+}
+.index-gllacy-items {
+	width: 1045px;
+	min-height: 540px;
+}
+.features {
+	margin-bottom: 40px;
+}
+.features-item {
+	float: left;
+	width: 560px;
+	margin-right: 25px;
+	padding: 20px 15px;
+	background: #90001f url("img/bg-lampone.png") no-repeat 100%;
+	border-radius: 20px;
+	box-sizing: border-box;
+
+	/* Только для оформления сетки */
+	min-height: 230px;
+}
+.features-item:last-child {
+    background: #3a2315 url("img/bg-chocolate.png") no-repeat 100%;
+	border-radius: 20px;
+    margin-right: 0;
+}
+.catalog {
+	/* Только для оформления сетки */
+	min-height: 326px;
+}
+.catalog-items {
+	width: 273px;
+	display: inline-block;
+}
+.index-content {
+	border-radius: 20px;
+	width: 1146px;
+	padding: 30px 20px;
+	margin-bottom: 38px;
+	background: #f1e8d5;
+	  /* Только для оформления сетки */
+  min-height: 307px;
+}
+
+.index-content-left {
+	float: left;
+	width: 573px;
+
+}
+
+.index-content-right {
+	float: right;
+	width: 573px;
+
+}
+.news {
+	margin-bottom: 40px;
+}
+.blog-news {
+	box-sizing: border-box;
+	padding: 25px 20px;
+    float: left;
+	width: 560px;
+	background: #ffffff;
+	border-radius: 20px;
+
+	 /* Только для оформления сетки */
+  min-height: 220px;
+}
+.news-letter {
+	box-sizing: border-box;
+	margin-right: 15px;
+	padding: 35px 25px;
+	float: right;
+	width: 560px;
+    background: #f8f7f4;
+    border-radius: 20px;
+
+	 /* Только для оформления сетки */
+    min-height: 220px;
+}
+.maps {
+	margin-top: 40px;
+    width: 1200px;
+    background: #ffffff url("img/map-pin.png") no-repeat 100%;
+
+	 height: 430px;
+}
+.contact-info {
+
+	float: right;
+	width: 300px;
+
+	/* Только для оформления сетки */
+    min-height: 305px;
+
+}
+
+.main-footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+.footer-social {
+	float: left;
+	width: 330px;
+     /* Только для оформления сетки */
+  min-height: 55px;
+}
+.footer-contacts {
+	float: left;
+	width: 440px;
+     /* Только для оформления сетки */
+  min-height: 55px;
+}
+.footer-copyright {
+	float: right;
+	width: 300px;
+     /* Только для оформления сетки */
+  min-height: 55px;
 }

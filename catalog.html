@@ -4,19 +4,19 @@
     <meta charset="utf-8">
      <link rel="stylesheet" href="style.css">
     <title> HTML Academy: Глейси </title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
-    <div class="main-header">
-      <div class="index-logo">
-        <img src="img/index-logo.png" width="100" height="50" alt="GllacyShop">
-      </div>
-      <div class="container">
+    <header class="main-header">
+      <div class="container clearfix">  
+        <div class="index-logo">
+          <img src="img/logo.svg" width="153" height="63" alt="GllacyShop">
+        </div>
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="/Users/Galia/Documents/GitHub/153593-gllacy/catalog.html"> Каталог </a>
+              <a href="catalog.html"> Каталог </a>
             </li>
             <li>
               <a href="#"> Доставка и оплата </a>
@@ -26,11 +26,13 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </div>
-      <div class="user-block">
+        <div class="user-block">
         <div class="search">
-          &#128269;
+        <form action="#" method="post">
+         <label for="search">
+          <input type="search" name="search" id="search"> 
+         </label>
+        </form>   
         </div>
         <div class="login">
           <a href="#"> Вход </a>
@@ -38,28 +40,29 @@
         <div class="cart">
           <a href="#"> Пусто </a>
         </div>
+        </div>
+        <div class="info">
+        <p>
+          С 10 до 20, ежедневно <br>
+          <strong> 8 812 450-25-25 </strong>
+        </p>
+        </div>
       </div>
+    </header>
+    <div class="container">
       <div class="breadcrumps">
         <ul>
           <li>
-            <a href="/Users/Galia/Documents/GitHub/153593-gllacy/index.html"> Главная </a>>>
+            <a href="index.html"> Главная </a>>>
           </li>
           <li>
-            <a href="/Users/Galia/Documents/GitHub/153593-gllacy/catalog.html"> Каталог </a>>>
+            <a href="catalog.html"> Каталог </a>>>
           </li>
           <li>
             <a href="#"> Сливочное </a>
           </li>
         </ul>
       </div>
-      <div class="info">
-      <p>
-        С 10 до 20, ежедневно <br>
-        <strong> 8 812 450-25-25 </strong>
-      </p>
-      </div>
-    </header>
-    <div class="container">
       <h1> Сливочное мороженое </h1>
       <form action="/echo" method="post">
         <div class="filter">
@@ -97,7 +100,7 @@
       <section class="catalog">
         <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Апельсиновое">  
+          <img src="img/item1.png" width="265" height="265" alt="Апельсиновое">  
             <span> 310₽/кг </span>
           </div>
         <div class="items-description">
@@ -106,7 +109,7 @@
         </div>
          <div class="catalog-items">
           <div class="items-image">
-            <img src="http://placehold.it/150x100" alt="Кофейное">
+            <img src="img/item2.png" width="265" height="265" alt="Кофейное">
             <span> 380₽/кг </span>
           </div>
           <div class="items-description">
@@ -115,7 +118,7 @@
           </div>
          <div class="catalog-items">
             <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Клубничное">
+          <img src="img/item3.png" width="265" height="265" alt="Клубничное">
             <span> 355₽/кг </span>
             </div>
           <div class="items-description">
@@ -124,7 +127,7 @@
           </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Крем-брюле">
+          <img src="img/item4.png" width="265" height="265" alt="Крем-брюле">
             <span> 415₽/кг </span>
             </div>
           <div class="items-description">
@@ -133,7 +136,7 @@
           </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Апельсиновое">
+          <img src="img/item5.png" width="265" height="265" alt="Апельсиновое">
             <span> 325₽/кг </span>
             </div>
             <div class="items-description">
@@ -142,7 +145,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">  
-          <img src="http://placehold.it/150x100" alt="Кофейное">
+          <img src="img/item6.png" width="265" height="265" alt="Кофейное">
             <span> 410₽/кг </span>
              </div>
           <div class="items-description">
@@ -151,7 +154,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Клубничное">
+          <img src="img/item7.png" width="265" height="265" alt="Клубничное">
             <span> 375₽/кг </span>
              </div>
           <div class="items-description">
@@ -160,7 +163,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Крем-брюле">
+          <img src="img/item8.png" width="265" height="265" alt="Крем-брюле">
             <span> 320₽/кг </span>
              </div>
           <div class="items-description">
@@ -169,7 +172,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Апельсиновое">
+          <img src="img/item9.png" width="265" height="265" alt="Апельсиновое">
             <span> 440₽/кг </span>
              </div>
           <div class="items-description">
@@ -178,7 +181,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Кофейное">
+          <img src="img/item10.png" width="265" height="265" alt="Кофейное">
             <span> 435₽/кг </span>
              </div>
           <div class="items-description">
@@ -187,7 +190,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Клубничное">
+          <img src="img/item11.png" width="265" height="265" alt="Клубничное">
             <span> 355₽/кг </span>
              </div>
           <div class="items-description">
@@ -196,7 +199,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="http://placehold.it/150x100" alt="Крем-брюле">
+          <img src="img/item12.png" width="265" height="265" alt="Крем-брюле">
             <span> 420₽/кг </span>
              </div>
           <div class="items-description">
@@ -226,7 +229,8 @@
       </ul>
       <a class="btn navigation-next" href="#"></a>
     </div>
-     <footer class="container">
+      <footer class="main-footer">
+        <div class="container clearfix">
         <div class="footer-social">
           <ul>
             <li>
@@ -243,7 +247,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer">
+        <div class="footer-contacts">
           <ul>
             <li>
               <a href="#"> Для поставщиков </a> 
@@ -267,7 +271,7 @@
             &copy; 2016
           </p>
         </div>
+        </div>
       </footer>
-  </body>
 </html> 
 
