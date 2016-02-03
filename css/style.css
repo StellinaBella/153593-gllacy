@@ -32,6 +32,9 @@ p {
 ul li {
 	display: inline-block;
 }
+legend {
+	display: inline-block;
+}
 .clearfix::after {
 	content: "";
 	display: table;
