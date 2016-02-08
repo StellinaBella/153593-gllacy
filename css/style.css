@@ -149,9 +149,7 @@ a
 	padding: 30px 20px;
 	margin-bottom: 38px;
 	background: #f1e8d5 url("../img/bg-wafl.jpg") 100%;
-	  /* Только для оформления сетки 
-  min-height: 307px;*/
-  color:  #323232;
+    color:  #323232;
 }
 
 .index-content-left {
