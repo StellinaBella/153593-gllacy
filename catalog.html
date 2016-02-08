@@ -63,18 +63,22 @@
           </li>
         </ul>
       </div>
-      <h1> Сливочное мороженое </h1>
+      <h2> Сливочное мороженое </h2>
       <form action="/echo" method="post">
-        <div class="filter">
-          <legend> Сортировка </legend>
+        <div class="filter top">
+          <h4> Сортировка </h4>
           <select>
             <option value="top"> По популярности </option>
           </select>
-          <legend> Цена: 100 руб.- 500 руб. </legend>
-            <input type="range" name="range" min="100" max="500">
-          <legend> Жирность </legend>
+        </div>
+        <div class="filter price">
+          <h4> Цена: 100 руб.- 500 руб. </h4>
+            <input type="range" name="price" min="100" max="500">
+        </div>
+        <div class="filter fat">
+          <h4> Жирность </h4>
             <input type="radio" name="fat-content" id="zero"> 
-            <label for id="zero">0%</label>
+            <label for="zero">0%</label>
             <input type="radio" name="fat-content" id="less-ten" checked> 
             <label for="less-ten">до 10%</label>
             <input type="radio" name="fat-content" id="less-thirty"> 
@@ -82,8 +86,8 @@
             <input type="radio" name="fat-content" id="more-thirty">
             <label for="more-thirty">выше 30%</label>
         </div>
-        <div class="filter">
-          <legend> Наполнители: </legend>
+        <div class="filter filler">
+          <h4> Наполнители: </h4>
             <input type="checkbox" name="filler" id="chocolate" checked> 
             <label>шоколадные</label>
             <input type="checkbox" name="filler" id="sugar-strew" checked> 
@@ -91,16 +95,18 @@
             <input type="checkbox" name="filler" id="fruits"> 
             <label for="fruits">фрукты</label>
             <input type="checkbox" name="filler" id="syrup"> 
-            <label for="syrop">сиропы</label>
+            <label for="syrup">сиропы</label>
             <input type="checkbox" name="filler" id="jam">
             <label for="jam">джемы</label>
+        </div>
+        <div class="filter submit">
           <input type="submit" value="Применить">
         </div>
       </form>
       <section class="catalog">
         <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item1.png" width="265" height="265" alt="Апельсиновое">  
+          <img src="img/item1.png" width="267" height="267" alt="Апельсиновое">  
             <span> 310₽/кг </span>
           </div>
         <div class="items-description">
@@ -109,7 +115,7 @@
         </div>
          <div class="catalog-items">
           <div class="items-image">
-            <img src="img/item2.png" width="265" height="265" alt="Кофейное">
+            <img src="img/item2.png" width="267" height="267" alt="Кофейное">
             <span> 380₽/кг </span>
           </div>
           <div class="items-description">
@@ -118,7 +124,7 @@
           </div>
          <div class="catalog-items">
             <div class="items-image">
-          <img src="img/item3.png" width="265" height="265" alt="Клубничное">
+          <img src="img/item3.png" width="267" height="267" alt="Клубничное">
             <span> 355₽/кг </span>
             </div>
           <div class="items-description">
@@ -127,7 +133,7 @@
           </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item4.png" width="265" height="265" alt="Крем-брюле">
+          <img src="img/item4.png" width="267" height="267" alt="Крем-брюле">
             <span> 415₽/кг </span>
             </div>
           <div class="items-description">
@@ -136,7 +142,7 @@
           </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item5.png" width="265" height="265" alt="Апельсиновое">
+          <img src="img/item5.png" width="267" height="267" alt="Апельсиновое">
             <span> 325₽/кг </span>
             </div>
             <div class="items-description">
@@ -145,7 +151,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">  
-          <img src="img/item6.png" width="265" height="265" alt="Кофейное">
+          <img src="img/item6.png" width="267" height="267" alt="Кофейное">
             <span> 410₽/кг </span>
              </div>
           <div class="items-description">
@@ -154,7 +160,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item7.png" width="265" height="265" alt="Клубничное">
+          <img src="img/item7.png" width="267" height="267" alt="Клубничное">
             <span> 375₽/кг </span>
              </div>
           <div class="items-description">
@@ -163,7 +169,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item8.png" width="265" height="265" alt="Крем-брюле">
+          <img src="img/item8.png" width="267" height="267" alt="Крем-брюле">
             <span> 320₽/кг </span>
              </div>
           <div class="items-description">
@@ -172,7 +178,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item9.png" width="265" height="265" alt="Апельсиновое">
+          <img src="img/item9.png" width="267" height="267" alt="Апельсиновое">
             <span> 440₽/кг </span>
              </div>
           <div class="items-description">
@@ -181,7 +187,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item10.png" width="265" height="265" alt="Кофейное">
+          <img src="img/item10.png" width="267" height="267" alt="Кофейное">
             <span> 435₽/кг </span>
              </div>
           <div class="items-description">
@@ -190,7 +196,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item11.png" width="265" height="265" alt="Клубничное">
+          <img src="img/item11.png" width="267" height="267" alt="Клубничное">
             <span> 355₽/кг </span>
              </div>
           <div class="items-description">
@@ -199,7 +205,7 @@
             </div>
          <div class="catalog-items">
           <div class="items-image">
-          <img src="img/item12.png" width="265" height="265" alt="Крем-брюле">
+          <img src="img/item12.png" width="267" height="267" alt="Крем-брюле">
             <span> 420₽/кг </span>
              </div>
           <div class="items-description">
@@ -209,10 +215,10 @@
       </section>
     </div> 
     <div class="navigation">
-      <a class="btn navigation-prev" href="#"></a>
+      <a class="navigation-prev" href="#"></a>
       <ul>
       <li>
-      <a href="#"> 1 </a> 
+      <a class="active" href="#"> 1 </a> 
       </li>
        <li>
       <a href="#"> 2 </a> 
@@ -227,23 +233,23 @@
       <a href="#"> 5 </a> 
       </li>
       </ul>
-      <a class="btn navigation-next" href="#"></a>
+      <a class="navigation-next" href="#"></a>
     </div>
       <footer class="main-footer">
         <div class="container clearfix">
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-btn social-btn-tw" href="#"> Твиттер </a>
+              <a class="social-btn social-btn-tw" href="#"><img src="img/twitter.svg" width="31" height="31" alt="Твиттер"></a>
             </li>
             <li>
-              <a class="social-btn social-btn-ins" href="#"> Инстаграм </a>
+              <a class="social-btn social-btn-ins" href="#"><img src="img/instagram.svg" width="31" height="31" alt="Инстаграм"></a>
             </li>
             <li>
-              <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
+              <a class="social-btn social-btn-fb" href="#"><img src="img/fb.svg" width="31" height="31" alt="Фейсбук"></a>
             </li>
             <li>
-              <a class="social-btn social-btn-vk" href="#"> Вконтакте </a>
+              <a class="social-btn social-btn-vk" href="#"><img src="img/vk.svg" width="31" height="31" alt="Вконтакте"></a>
             </li>
           </ul>
         </div>
@@ -264,10 +270,10 @@
             </ul> 
         </div>
         <div class="footer-copyright">
-          <img src="img/logo-htmlacademy.png" alt="">
+          <img src="img/html-academy.svg" width="110" height="40" alt="logo">
           <p>
             Сделано в
-           <a class="btn" href="https://htmlacademy.ru"> HTML Academy </a>
+           <a href="https://htmlacademy.ru"> HTML Academy </a>
             &copy; 2016
           </p>
         </div>

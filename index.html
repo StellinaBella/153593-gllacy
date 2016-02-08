@@ -26,19 +26,19 @@
           </ul>
         </nav>
         <div class="user-block">
-        <div class="search">
-        <form action="#" method="post">
-         <label for="search">
-          <input type="search" name="search" id="search"> 
-         </label>
-        </form>   
-        </div>
-        <div class="login">
-          <a href="#"> Вход </a>
-        </div>
-        <div class="cart">
-          <a href="#"> Пусто </a>
-        </div>
+          <div class="search">
+            <form action="#" method="post">
+              <label for="search">
+              <input type="search" name="search" id="search"> 
+              </label>
+            </form>   
+          </div>
+          <div class="login">
+            <a href="#"> Вход </a>
+          </div>
+          <div class="cart">
+            <a href="#"> Пусто </a>
+          </div>
         </div>
         <div class="info">
         <p>
@@ -71,8 +71,11 @@
       </div>
       <div class="catalog clearfix">
         <div class="catalog-items">
+          <div class="hit">
+          <img src="img/hit.png" width="61" height="61" alt="hit">
+          </div>
           <div class="items-image">
-            <img src="img/item1.png" width="265" height="265" alt="Апельсиновое">  
+            <img src="img/item1.png" width="267" height="267" alt="Апельсиновое">  
             <span> 310₽/кг </span>
           </div>
           <div class="items-description">
@@ -80,8 +83,11 @@
           </div>
         </div>
         <div class="catalog-items">
+          <div class="hit">
+          <img src="img/hit.png" width="61" height="61" alt="hit">
+          </div>
           <div class="items-image">
-            <img src="img/item2.png" width="265" height="265" alt="Кофейное">
+            <img src="img/item2.png" width="267" height="267" alt="Кофейное">
             <span> 380₽/кг </span>
           </div>
           <div class="items-description">
@@ -89,8 +95,11 @@
           </div>
         </div>
         <div class="catalog-items">
+          <div class="hit">
+          <img src="img/hit.png" width="61" height="61" alt="hit">
+          </div>
           <div class="items-image">
-            <img src="img/item3.png" width="265" height="265" alt="Клубничное">
+            <img src="img/item3.png" width="267" height="267" alt="Клубничное">
             <span> 355₽/кг </span>
           </div>
           <div class="items-description">
@@ -98,8 +107,11 @@
           </div>
         </div>
         <div class="catalog-items">
+          <div class="hit">
+          <img src="img/hit.png" width="61" height="61" alt="hit">
+          </div>
             <div class="items-image">
-              <img src="img/item4.png" width="265" height="265" alt="Крем-брюле">
+              <img src="img/item4.png" width="267" height="267" alt="Крем-брюле">
               <span> 415₽/кг </span>
             </div>
             <div class="items-description">
@@ -139,24 +151,22 @@
          </p>
           <input type="text" name="e-mail" id="mail" placeholder="Электронная почта">
           <label for="mail"></label>
-          <input type="submit" value="Отправить">
+          <input class="btn" type="submit" value="Отправить">
         </div>
       </div>
-
-       <div class="maps">
-        <!-- как добавить интерактивную карту? -->
-      </div>
-      <div class="contact-info">
-        <p>
+      <div class="maps">
+        <div class="contact-info">
+          <p>
           Адрес главного офиса и офлайн магазина:<br>
           <strong> ул. Большая Конюшенная 19/8, Санкт-Петербург </strong>
-        </p>
-        <p>
+          </p>
+          <p>
           Для заказов по телефону: <br>
           <strong> 8 812 450-25-25 </strong><br>
           (с 10 до 20 ежедневно)
-          <input type="submit" name="submit" value="Форма обратной связи">
-        </p>
+          <input class="btn" type="submit" name="submit" value="Форма обратной связи">
+          </p>
+        </div>
       </div>
       </div>
       <footer class="main-footer">
@@ -164,16 +174,16 @@
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-btn social-btn-tw" href="#"> Твиттер </a>
+              <a class="social-btn social-btn-tw" href="#"><img src="img/twitter.svg" width="31" height="31" alt="Твиттер"></a>
             </li>
             <li>
-              <a class="social-btn social-btn-ins" href="#"> Инстаграм </a>
+              <a class="social-btn social-btn-ins" href="#"><img src="img/instagram.svg" width="31" height="31" alt="Инстаграм"></a>
             </li>
             <li>
-              <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
+              <a class="social-btn social-btn-fb" href="#"><img src="img/fb.svg" width="31" height="31" alt="Фейсбук"></a>
             </li>
             <li>
-              <a class="social-btn social-btn-vk" href="#"> Вконтакте </a>
+              <a class="social-btn social-btn-vk" href="#"><img src="img/vk.svg" width="31" height="31" alt="Вконтакте"></a>
             </li>
           </ul>
         </div>
@@ -183,10 +193,10 @@
               <a href="#"> Для поставщиков </a> 
             </li>
             <li>
-              <a href="#"> О производстве </a>
+              <a href="#"> Наши документы </a>
             </li>
             <li>
-              <a href="#"> Наши документы </a> 
+              <a href="#"> О производстве </a> 
             </li>
             <li>  
               <a href="#"> Экологические стандарты </a>   
@@ -197,7 +207,7 @@
           <img src="img/html-academy.svg" width="110" height="40" alt="logo">
           <p>
             Сделано в
-           <a class="btn" href="https://htmlacademy.ru"> HTML Academy </a>
+           <a href="https://htmlacademy.ru"> HTML Academy </a>
             &copy; 2016
           </p>
         </div>
