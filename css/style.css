@@ -6,7 +6,7 @@ body {
 	font-family: 'Roboto', Arial, sans-serif;
 }
 body {
-	min-width: 1200px;
+	width: 1200px;
     min-height: 2416px;
     margin: 0;
     padding: 0;
@@ -71,15 +71,24 @@ a
 	width: 600px;
 }
 .user-block {
-	float: right;
-	width: 300px;
-
+	margin-top: 20px;
+	display: inline-block;
+	text-align: right;
+	width: 400px;
 }
-
+.search {
+	display: inline-block;
+}
+.login {
+	display: inline-block;
+}
+.cart {
+	display: inline-block;
+}
 .info {
-	 position: absolute;
-	 right: 20px;
-	 top: 40px;
+    position: absolute;
+    top:70px;
+    right: 20px;
 }
 .index-logo {
 	float: left;
@@ -173,9 +182,19 @@ a
 	width: 560px;
 	background: #ffffff url("../img/bg-strawberry.png") no-repeat 100%;
 	border-radius: 20px;
+	color: #5a5a5a;
 
 	 /* Только для оформления сетки */
   min-height: 220px;
+}
+.blog-news a {
+	display: inline-block;
+	color: #353535;
+	width: 300px;
+	word-wrap: break-word;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
 }
 .news-letter {
 	box-sizing: border-box;
@@ -200,9 +219,16 @@ a
 
 	float: right;
 	width: 300px;
-
-	/* Только для оформления сетки */
-    min-height: 305px;
+	height: 305px;
+	margin-top: 65px;
+	margin-right: 27px;
+	padding-top: 35px;
+	padding-left: 27px;
+	background: #fefefe;
+	color: #343434;
+	border-radius: 30px;
+	text-align: left;
+    
 
 }
 
@@ -232,16 +258,24 @@ a
 	float: right;
 	width: 300px;
 }
-.navigation  {
-	display: inline-block;
-	width: 210px;
-	text-align: right;
-	font-size: 16px;
+
+
+/* Каталог */
+.pages {
+	float: right;
+	bottom: 145px;
+	right: 30px;
 }
-.navigation a {
+.pages a {
+	display: block;
+	padding:15px;
 	text-decoration: none;
 	font-size: 16px;
-
+}
+.pages .active {
+	color: #353535;
+	background: #ffffff;
+	border-radius: 100px;
 }
 .filter {
 	display: inline-block;
