@@ -426,23 +426,73 @@ background: url("../img/bg-icecream.png") no-repeat center top;
 	width: 330px;
 }
 .social-btn {
-	margin-right: 18px;
-
-}
-.social-btn img {
-
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
-	border: 3px solid rgba(255, 255, 255, 0.5);
-}
-.social-btn-tw {
+	border: 3px solid #c2cec7;
+	border-radius: 50%;
 	position: relative;
 }
-.social-btn-tw:hover {
-	content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
+.social-btn {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	border-radius: 50%;
+	opacity: 0.8;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.social-btn-tw {
+	position: relative; 
+	opacity: 0.8;
+	width: 31px;
+    height: 31px;
 	background: url("../img/sprite1.png") -100px -6px no-repeat;
+}
+.social-btn-tw:hover {
+    border:none;
+	opacity: 1;
+}
+.social-btn-ins {
+	position: relative; 
+	opacity: 0.8;
+	width: 31px;
+    height: 31px;
+	background: url("../img/sprite1.png") -134px -6px no-repeat;
+}
+.social-btn-ins:hover {
+    border:none;
+	opacity: 1;
+}
+.social-btn-fb {
+	position: relative; 
+	opacity: 0.8;
+	width: 31px;
+    height: 31px;
+	background: url("../img/sprite1.png") -168px -6px no-repeat;
+}
+.social-btn-fb:hover {
+    border:none;
+	opacity: 1;
+}
+.social-btn-vk {
+	position: relative; 
+	opacity: 0.8;
+	width: 31px;
+    height: 31px;
+	background: url("../img/sprite1.png") -67px -6px no-repeat;
+}
+.social-btn-vk:hover {
+    border:none;
+	opacity: 1;
+}
+.focial-btn:active {
+	opacity: 1;
+	box-shadow: 0 -2px 1px #888;
 }
 .footer-contacts {
 	position: relative;
