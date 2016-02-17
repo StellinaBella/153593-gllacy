@@ -125,30 +125,71 @@ a:active {
 	font-size: 16px;
 	font-weight: bold;
 }
+
+.main-navigation a:active,
+.submit:active {
+	color: #333333;
+	text-decoration: none;
+	background: #e0dfdd;
+	box-shadow: inset 0 2px 0 0 #696969;
+}
 .main-navigation .catalog-link {
 	display: none;
 	margin: 0;
 	padding: 0;
-	width: 150px;
+	width: 152px;
 	background: #f8f7f4;
 	color:#343434;
-	font-weight: bold;
+	font-weight: normal;
+	border-radius: 3px;
 }
 .catalog-link a {
 	display: block;
 	color: #343434;
 	text-decoration: none;
 	font-weight: normal;
+	padding-left: 20px;
+	width: 117px;
 }
-.catalog-link a:focus {
+.catalog-link span {
+	margin-left: 5px;
+	width: 110px;
+	display: block;
+	padding: 10px 15px;
+    border-bottom: 1px solid #d1d0ce;
+    font-weight: bold;
+}
+.catalog-link a:hover {
+	background: #fbded7;
+	font-weight: normal;	
+	border-radius: 0;
+    margin-right: 0;
+    
+    
+}
+.catalog-link a:active {
+	display: block;
 	background: #f6b5a5;
+	font-weight: normal;	
+	border-radius: 0;
+    margin-right: 0;
+    width: 117px;
+    box-shadow: none;
 }
-.main-navigation:hover .catalog-link {
+.catalog-link .active {
+	background: #d07058;
+	font-weight: normal;	
+	border-radius: 0;
+    margin-right: 0;
+    width: 117px;
+    color: #ffffff;
+        margin-top: -1px;
+}
+.main-navigation li:first-child:hover .catalog-link  {
 	top: 50px;
 	display: block;
 	position: absolute;
 }
-
 .user-block {
 	display: inline-block;
 	text-align: right;
@@ -161,8 +202,8 @@ a:active {
 }
 .user-block a {
 	display: inline-block;
-		margin: 0;
-		padding: 0;
+	margin: 0;
+	padding: 0;
 	text-decoration: none;
 }
 .user-block a:hover {
@@ -576,14 +617,18 @@ span.active {
 	width: 26px;
 	height: 26px;	
 	font-size: 16px;
+	line-height: 26px;
 	list-style: none;
 	text-decoration: none;
 	text-align: center;
+	border-radius: 50%;
+}
+.pages a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 .pages .active {
-	color: #353535;
+	color: #343434;
 	background: #ffffff;
-	border-radius: 50%;
 }
 .filter {
 	display: inline-block;
@@ -634,6 +679,7 @@ select {
     
 }
 
+
 .submit {
 	border: 2px solid #ffffff;
 }
@@ -643,4 +689,16 @@ select {
 	border: none;
 	color: #ffffff;	
 	background: #aabab0;
+}
+.submit:hover [type="submit"] {
+		color: #343434;
+	background: #fafbfb;
+}
+.-submit:active {
+	color: #343434;
+	
+	background: #ededed;
+	border: none;
+	outline: none;
+	box-shadow: inset 0 2px #696969;
 }
