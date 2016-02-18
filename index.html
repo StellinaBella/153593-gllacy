@@ -37,12 +37,48 @@
         <div class="user-block">
           <div class="search">
             <a href="#" class="search">&nbsp;</a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="search">
+                <input type="search" name="search" value="Что ищем?" class="input-search">
+              </label>
+            </form>
           </div>
           <div class="login">
             <a href="#" class="login">Вход</a>
-          </div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label for="e-mail" class="e-mail">
+                <input type="text" name="e-mail" id="e-mail" value="Электронная почта" class="input-e-mail">
+              </label> 
+              <label for="password" class="password">
+                <input type="text" name="password" id="password" value="Пароль" class="input-password">
+              </label>  
+              <label>
+                <input class="btn btn-login" type="submit" value="Войти">    
+              </label> 
+              <ul class="new-login">
+                <li><a href="#">Забыли пароль?</a></li>
+                <li><a href="#">Новая регистрация</a></li>
+              </ul>
+            </form>     
+          </div>             
           <div class="cart">
             <a href="#" class="cart">Пусто</a>
+              <table class="cart-table">
+                <tr>
+                  <td width="10"><a class="cancel" href="#"></a></td>
+                  <td width="60" class="cart-item-image"><img src="img/item1.png" alt="item1" width="35" height="35"></td>
+                  <td class="cart-item"><a href="#">Пломбир с апельсиновым джемом</a></td>
+                  <td>1,5 кг <span class="price-kg">х 200 руб.</span></td>
+                  <td width="85">300 руб.</td>
+                </tr> 
+                <tr>
+                  <td><a class="cancel" href="#"></a></td>
+                  <td class="cart-item-image"><img src="img/item3.png" alt="item3" width="35" height="35"></td>
+                  <td class="cart-item"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                  <td>1,5 кг <span class="price-kg">х 300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>                
+              </table>
           </div>
         </div>
         <div class="info">
@@ -51,7 +87,6 @@
           <span class="number"> 8 812 450-25-25 </span>
         </p>
         </div>
-      </div>
       </div>
     </header>
     <div class="container">

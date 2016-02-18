@@ -244,7 +244,7 @@ a:active {
     border-radius: 20px;
 }
 
-.login a::before {
+.login a::before  {
  	content: "";
     position: absolute;
     width: 20px;
@@ -252,7 +252,7 @@ a:active {
     left: 20px;
     background: url("../img/sprite1.png") no-repeat -20px 1px;
 }
-.login:hover a::before {
+.login:hover::before {
 	 background: url("../img/sprite1.png") no-repeat -20px -23px;
 }
 .cart a{
@@ -273,11 +273,11 @@ a:active {
   width: 22.5px;
   height: 21px;
   left: 15px;
-  background: url("../img/sprite1.png") no-repeat -45px 1px;
+  background: url("../img/sprite1.png") no-repeat -44px 1px;
 
 }
 .cart:hover a::before {
-	background: url("../img/sprite1.png") no-repeat -45px -20px;
+	background: url("../img/sprite1.png") no-repeat -44px -21px;
 }
 .info {
 	position: absolute;
@@ -287,10 +287,122 @@ a:active {
 	font-size: 14px;
 	text-align: right;
 }
+form, table {
+	display: none;
+}
+.search:hover form {
+	display: inline-block;
+	position: absolute;
+	top: 51px;
+	right: 300px;
+	background: #f8f7f4;
+	padding: 15px;
+	border-radius: 6px;
+	z-index: 10;
+}
+.search input {
+		font-size: 14px;
+	line-height: 24.3px;
+	color: #999999;
+	width: 310px;
+	padding:5px 10px;
+	border-radius: 6px;
+	border: 1px solid #d3d3d2;
+}
+.login:hover form {
+	display: inline-block;
+	position: absolute;
+	background: #f8f7f4;
+	padding: 15px;
+	border-radius: 6px;
+	top: 51px;
+	right: 150px;
+	width: 272px;
+	z-index: 10;
+}
+.login input[type="text"] {
+	font-size: 14px;
+	line-height: 24.3px;
+	color: #999999;
+	width: 239px;padding: 5px 10px;
+	border-radius: 6px;
+	border: 1px solid #d3d3d2;
+	margin-bottom: 10px;
+	position: relative;
+}
+.btn-login {
+	float: left;
+	color: #ffffff;
 
+}
+.new-login {
+  position: absolute;
+  top: 100px;
+  margin: 0;
+
+}
+.new-login a,
+.new-login:hover a {
+	text-align: left;
+	color: #333333;
+	font-size: 13px;
+	line-height: 24.3px;
+	display: inline-block;
+	background: none;
+	opacity: 0.99;
+	width: 125px;
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+}
+.cart:hover table {
+	display: inline-block;
+	position: absolute;
+	background: #f8f7f4;
+	padding: 15px;
+	border-radius: 6px;
+	top: 51px;
+	right: 150px;
+	width: 535px;
+	z-index: 10;
+}
+.cart-table a,
+.cart-table:hover a {
+	color: #333333;
+	font-size: 13px;
+	line-height: 24.3px;
+	display: inline-block;
+	background: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	text-align: center;
+}
+table { 
+	width: 510px;
+	border-collapse: collapse;
+	border-bottom: 1px solid #cacac7;
+}
+
+td {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-family: "Roboto Regular", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+	vertical-align: top;
+}
+.cart-item,
+.cart-item-image {
+	padding-top: 10px;	
+}
+.price-kg {
+	color: #808080;
+}
 .number {
 	display: block;
-
 	font-size: 22px;
 	font-weight: bold;
 }
@@ -315,6 +427,10 @@ background: url("../img/bg-icecream.png") no-repeat center top;
 	line-height: 62.93px;
 	font-weight: bold;
 
+}
+.items-description {
+	text-align: center;
+	width: 250px;
 }
 .features {
 	margin-bottom: 40px;
@@ -364,6 +480,7 @@ background: url("../img/bg-icecream.png") no-repeat center top;
 	position: absolute;
 	top: 210px;
 	left:0;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 .small {
 	font-size: 30px;
